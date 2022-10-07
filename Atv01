@@ -1,0 +1,38 @@
+/* Faça um programa que solicite 2 números e informe:
+A soma dos números;
+O produto do primeiro número pelo quadrado do segundo; 
+O quadrado do primeiro número; 
+A raiz quadrada da soma dos quadrados; 
+O seno da diferença do primeiro número pelo segundo eO módulo do primeiro número.*/
+
+#include <stdio.h>
+#include <math.h> 
+int main (){    
+//Declarar Variáveis
+    float num1, num2, soma, produto, quad_1, raiz, seno, modulo;
+//Entrada
+    printf("Digite o primeiro número: ");    
+    scanf("%f", &num1);
+    printf("Digite o segundo número: ");
+    scanf("%f", &num2);
+//Processamento 
+//Somar os dois números;
+//O primeiro número mais o quadrado do segundo;
+//O quadrado do primeiro;
+//A raiz da soma dos quadrados;
+//O seno da diferença do primeiro pelo segundo;
+//O módulo do primeiro número.*/
+     soma = num1 + num2;
+     produto = num1+(num2*num2);
+     quad_1 = num1*num1;
+     raiz = sqrt(num1*num1+(num2*num2)); 
+     seno = sin(num1-num2); 
+     modulo = abs(num1);   
+//Saída       
+     printf("a) A soma dos numeros %f\n: ", soma);
+     printf("b) O produto do primeiro pelo quadrado do segundo numero %f\n: ", produto);
+     printf("c) O quadrado do primeiro número %f\n: ", quad_1);
+     printf("d) A raiz quadrada da soma dos quadrados %f\n: ", raiz);
+     printf("e) O seno da diferença do primeiro pelo segundo numero %f\n: ", seno);
+     printf("f) O modulo do primeiro numero  %f\n: ", modulo);    
+}
