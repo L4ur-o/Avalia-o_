@@ -1,0 +1,25 @@
+/* Escreva um programa que imprime a tabela ASCII 
+(código decimal, código hexa, caractere) para os 
+códigos de 0 a 127 */
+
+//Não sou Spellbook mas tô cheio de bibliotecas.
+#include <stdio.h>
+#include <string.h>
+//Invocando fusões ops... funções:
+void main (){
+
+// Declarar variáveis 
+   int ArcV;
+
+//Entrada  
+
+//Processamento    
+
+//Laço for 
+    for(ArcV = 0 ; ArcV < 128 ; ArcV++){
+        if(ArcV%20==0);        
+//Saída
+            printf("\n");
+            printf("%d = %c = %x = %X\t", ArcV, ArcV, ArcV, ArcV);
+    }
+}
