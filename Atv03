@@ -1,0 +1,17 @@
+/* Escreva um programa que leia um número na base decimal e em seguida imprima esse mesmo número nas bases octal e hexadecimal. */
+#include <stdio.h>
+#include <string.h>
+#include <conio.h>
+//Invocando fusões ops... funções:
+int main (){
+// Declarar variáveis        
+int valor;        
+//Entrada       
+    printf("Digite um numero decimal: ");    
+    scanf("%d", &valor);    
+//Processamento        
+//Saída
+    printf("%d em Octal e:  %o\n ", valor, valor);
+    printf("%d em Hexadecimal e:  %x\n", valor, valor);
+    printf("%d em Hexadecimal e:  %X\n", valor, valor)
+}
