@@ -1,0 +1,34 @@
+/* Faça o programa que apresenta a seguinte saída,
+perguntando ao usuário o número máximo. Este número 
+deve ser sempre ímpar.
+                 1 2 3 4 5 6 7 8 9
+                   2 3 4 5 6 7 8                     
+                     3 4 5 6 7 
+                       4 5 6
+                         5                              */
+//Não sou Spellbook mas tô cheio de bibliotecas.
+#include <stdio.h>
+#include <stdlib.h>
+#include <conio.h>
+//Invocando fusões ops... funções:
+int main () {
+//Declarar variáveis.
+    int x, y, z, k;
+//Entrada
+    printf("Digite o número maximo do triangulo\n");
+    printf("\n•Condicao: o numero precisa ser impar: ");
+    scanf("%d", &x);
+//Processamento
+    if (x % 2 ==0)
+       printf("%d é um número impar? i don't think so!\n", x);
+    else{
+         k = (x - 1)/2;
+         for( y=0; y <= k; y++){
+              for (z=y+1; z<=x-y; z++){
+                  printf(" %d",z);
+              }
+              printf("\n");
+         }
+    }
+//Saída
+     }
