@@ -1,0 +1,25 @@
+/* Crie um programa capaz de ler dois nomes de pessoas e imprimi-los em ordem alfabética.*/
+#include <stdio.h>
+#include <string.h>
+
+int main(){
+
+	char palavra1[100], palavra2[100];
+	int retorno;
+	
+	printf("Digite o nome da primeira pessoa: ");
+	scanf("%s", &palavra1); 
+	printf("Digite o nome da segunda pessoa: ");
+	scanf("%s", &palavra2);
+
+	retorno = strcmp(palavra2, palavra1);
+
+    if(retorno==1){
+		printf("%s\n%s\n\n", palavra1,palavra2);
+ 	}
+ 	else{
+	 	 printf("%s\n%s\n\n", palavra2,palavra1);
+	}
+
+
+}
