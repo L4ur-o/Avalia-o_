@@ -1,0 +1,25 @@
+//Desenvolva um programa que leia dez números do tipo inteiro ao usuário armazene esses
+//dez números em um vetor. Para os valores dos elementos inseridos nas posições pares desse
+//vetor, calcule o somatório deles, para os demais calcule a subtração desses valores. Em
+//seguida, o programa deverá apresentar na tela os resultados
+
+#include <stdio.h>
+#include <string.h>
+int main(){
+	
+	int i, num[10], sum=0, j, sub=0;
+	
+	memset(num,0, 10*sizeof(num));
+	for (i=0; i<10; i++){
+		printf("Digite um número inteiro: ");
+		scanf("%d", &num[i]);
+	}
+	for (j=0; j<=10; j=j+2){
+		sum = sum+num[j];		
+	}
+	
+	sub = num[1]-num[3]-num[5]-num[7]-num[9];
+	printf("Somatorio = %d\n", sum);
+	printf("Subtração = %d", sub);
+	
+}
