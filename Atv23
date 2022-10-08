@@ -1,0 +1,27 @@
+/*Escreva um programa que solicite seis números do tipo inteiro ao usuário 
+e os armazene em um vetor, depois o programa deverá apresentar na tela os números 
+na ordem inversa do qual foram digitados.*/
+
+#include<stdio.h>
+#include<stdlib.h>
+
+
+int main()
+{
+	int a,b=0,c=6,vetor[0];
+	
+	do{
+	  b++;         
+	  printf("DIGITE 6 NUMEROS EM SEQUENCIA PARA VER ELES EM ORDEM INVERSA");
+	  printf("\nDigite o %i%c numero: ", b,167);
+	  scanf("%i",&vetor[b]);
+	  system("cls");
+	}while(b<=5);
+	
+	printf("A SEQUENCIA DIGITADA AO CONTRARIO E EXATAMENTE:\n");
+	do{
+	printf("o %i%c numero digitado foi: %i\n",b,167,vetor[b]);	
+	b--;
+	}while(b>=1);
+      
+}
